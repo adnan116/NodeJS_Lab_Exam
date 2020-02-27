@@ -20,7 +20,7 @@ router.post('/', function(req, res){
 		console.log(status);
 		if(status){
 
-			res.redirect('/login');
+			res.redirect('/');
 		}else{
 			res.redirect('/reg');
 		}
