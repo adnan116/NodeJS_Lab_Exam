@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update User</title>
+</head>
+<body>
+	<center>
+		<div>
+			<h1>Update User</h1> 		
+		</div>
+
+		<a href="/home/alluser"> Back to User Details</a> |
+		<a href="/Logout"> Logout</a><br>
+
+		<form method="post">
+			<table>
+				<tr>
+					<td>Id</td>
+					<td><input type="text" readonly name="id" value="<%=user.id%>"></td>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="name" value="<%=user.name%>"></td>
+				</tr>
+				<tr>
+					<td>Contact</td>
+					<td><input type="text" name="contact" value="<%=user.contact%>"></td>
+				</tr>
+				<tr>
+					<td>Username</td>
+					<td><input type="text" name="username" value="<%=user.username%>"></td>
+				</tr>
+				<tr>
+					<td>Password :</td>
+					<td><input type="password" name="password" value="<%=user.password%>"></td>
+				</tr>
+				<tr>
+					<td>Type :</td>
+					<td><input type="text" name="type" value="<%=user.type%>"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit" name="submit" value="Update"></td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>

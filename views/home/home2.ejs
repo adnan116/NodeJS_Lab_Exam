@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Home Page</title>
+</head>
+<body>
+	<center>
+		<div>
+			<h1>Welcome "<%= user.username%>"</h1> 		
+		</div>
+		<a href="/home2/allproduct"> View Product Details</a> |
+		<a href="/home2/productadd">Product Add</a> |
+		<a href="/logout">Logout</a><br>
+
+		<table>
+			<tr>
+				<td>Id:</td>
+				<td><%= user.id %></td>
+			</tr>
+			<tr>
+				<td>Name:</td>
+				<td><%= user.name %></td>
+			</tr>
+			<tr>
+				<td>Contact No:</td>
+				<td><%= user.contact %></td>
+			</tr>
+			<tr>
+				<td>Username:</td>
+				<td><%= user.username %></td>
+			</tr>
+			<tr>
+				<td>Type:</td>
+				<td><%= user.type %></td>
+			</tr>
+		</table>
+	</center>
+</body>
+</html>
