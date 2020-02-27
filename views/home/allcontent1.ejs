@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Content List</title>
+</head>
+<body>
+	<center>
+		<div>
+			<h1>Content List</h1> 		
+		</div>
+
+		<a href="/home"> Back to Home</a> |
+		<a href="/logout"> Logout</a><br>
+
+		<table border="1">
+			<tr>
+				<th>ID</th>
+				<th>Content Name</th>
+				<th>Category</th>
+				<th>Size(MB)</th>
+				<th>Action</th>
+			</tr>
+			<% for(var i=0; i < contentlist.length; i++){ %>
+			<tr>
+				<td><%= contentlist[i].id %></td>
+				<td><%= contentlist[i].name %></td>
+				<td><%= contentlist[i].category %></td>
+				<td><%= contentlist[i].size %></td>
+				<td>
+					<a href="/home2/contentedit/<%= contentlist[i].id %>">EDIT</a> | 
+					<a href="/home2/contentdelete/<%= contentlist[i].id %>">DELETE</a>  
+				</td>
+			</tr>
+			<% } %>
+		</table>
+	</center>
+</body>
+</html>
