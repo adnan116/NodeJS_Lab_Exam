@@ -5,7 +5,7 @@ var contentModel   = require.main.require('./models/content-model');
 
 router.get('*', function(req, res, next){
 	if(req.cookies['username'] == null){
-		res.redirect('/login');
+		res.redirect('/');
 	}else{
 		next();
 	}
