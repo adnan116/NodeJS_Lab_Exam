@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Content Insert</title>
+</head>
+<body>
+	<center>
+		<div>
+			<h1>Content Add</h1> 		
+		</div>
+
+		<a href="/home2"> Back to Home</a> |
+		<a href="/logout"> Logout</a><br>
+
+		<form method="post">
+			<table>
+				<tr>
+					<td>Content Name:</td>
+					<td><input type="text" name="cname"></td>
+				</tr>
+				<tr>
+					<td>Category:</td>
+					<td>
+						<select name="c_cat">
+							<option value="">Select Category</option>
+							<option value="Movie">Movie</option>
+							<option value="Software">Software</option>
+							<option value="TV Series">TV Series</option>
+							<option value="Games">Games</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Size:</td>
+					<td><input type="text" name="csize"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit" name="submit" value="Add"></td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>

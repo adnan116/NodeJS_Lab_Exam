@@ -28,6 +28,14 @@ router.get('/alluser', function(req, res){
 	});
 })
 
+router.get('/adminprofile', function(req, res){	
+	
+	userModel.getByUname(req.cookies['username'], function(result){
+	res.render('home/adminprofile', {user: result});
+	});
+	
+});
+
 router.get('/add', function(req, res){
 	res.render('home/add');
 })
